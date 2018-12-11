@@ -1,6 +1,6 @@
 # 矩形
 for i in range(1,5):
-    for j in range(1,6):
+    for j in range(1,8):
         print('*',end=' ')
     print()
 
@@ -8,8 +8,8 @@ print("*"*30)
 
 # 空心矩形
 for i in range(1,5):
-    for j in range(1,6):
-        if i==1 or i==4 or j==1 or j==5:
+    for j in range(1,8):
+        if i==1 or i==4 or j==1 or j==7:
             print("*",end=' ')
         else:
             print(" ",end=' ')
@@ -71,19 +71,6 @@ for i in range(1,6):
         print(end=" ")
     for n in range(6-i,6):
         if i==5 or  n==6-i or n==5:
-            print("*",end=' ')
-        else:
-            print(" ",end=' ')
-    print()
-
-print("*"*30)
-
-# 字母A
-for i in range(1,7):
-    for j in range(1,7-i):
-        print(end=' ')
-    for n in range(7-i,7):
-        if i==1 or i==4 or n==7-i or n==6:
             print("*",end=' ')
         else:
             print(" ",end=' ')
@@ -208,21 +195,15 @@ def shape():
         print("提示！！！请输入实心矩形.空心矩形.实心三角形.空心三角形.实心等腰三角形.空心等腰三角形中的一个")
 
 
-# 字母D
-for i in range(1,5):
-    for j in range(1,4):
-        if j == 1:
+# 字母A
+for i in range(1,7):
+    for j in range(1,7-i):
+        print(end=' ')
+    for n in range(7-i,7):
+        if i==1 or i==4 or n==7-i or n==6:
             print("*",end=' ')
-        elif i == 1 or i == 4:
-            if j > 2:
-                break
-            else:
-                print("*",end=' ')
-        elif i == 2 or i == 3:
-            if j > 2:
-                print("*",end=' ')
-            else:
-                print(" ",end=' ')
+        else:
+            print(" ",end=' ')
     print()
 
 print("*"*30)
@@ -258,6 +239,63 @@ for i in range(1,5):
                 print("*",end=' ')
             else:
                 print(" ",end=' ')
+    print()
+
+print("*"*30)
+
+# 字母C
+for i in range(1,6):
+    for j in range(1,5):
+        if i==2 or i==3 or i==4:
+            if j>1:
+                break
+            else:
+                print("*",end=' ')
+        elif i==1 or i==5:
+            if j==2 or j==3:
+                print("*",end=' ')
+            else:
+                print(" ",end=' ')
+
+    print()
+
+print("*"*30)
+
+# 字母D
+for i in range(1,5):
+    for j in range(1,4):
+        if j == 1:
+            print("*",end=' ')
+        elif i == 1 or i == 4:
+            if j > 2:
+                break
+            else:
+                print("*",end=' ')
+        elif i == 2 or i == 3:
+            if j > 2:
+                print("*",end=' ')
+            else:
+                print(" ",end=' ')
+    print()
+
+print("*"*30)
+# 字母E
+for i in range(1,6):
+    for j in range(1,6):
+        if j == 1:
+            print("*",end=' ')
+        elif i==1 or i==3 or i==5:
+            print("*",end=' ')
+    print()
+
+print("*"*30)
+# 字母F
+for i in range(1,6):
+    for j in range(1,6):
+        if j == 1:
+            print("*",end=' ')
+        elif i==1 or i==3:
+            print("*",end=' ')
     print()
 
 print("*"*30)
