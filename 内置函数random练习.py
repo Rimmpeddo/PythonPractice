@@ -17,7 +17,7 @@ def line10():
 
 def rand_gane(total,score):
     while 1:
-        num = input("请输入Digit,输入ESC退出:")
+        num = input("请输入Dight,输入ESC退出:")
         nums = random.randrange(100, 999)
 
         if num == "ESC":
@@ -64,6 +64,4 @@ def rand_gane(total,score):
 
         print("-"*30)
 
-if __name__ == '__main__':
-
-    rand_gane(total,score)
+rand_gane(total,score)

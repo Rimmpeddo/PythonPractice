@@ -11,7 +11,7 @@ class Ticket():
             self.discount = 0.5
         else:
             self.discount = 1
-
+    
     def count_price(self, num):
         return self.ticket_price * self.price * self.discount * num
 
